@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Key Figures</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="topnav">
+<h1 style="color:white; text-align: right;">PARATROOPERS OF THE PACIFIC</h1>
+<img src="wings.png" alt="Paratrooper Wings">
+  </nav>
+
+  <!-- Side Navigation Menu -->
+  <div class="sidenav">
+    <a href="index.html">
+      <img src="home.png" alt="Home" style="width: 50%; height: auto;" title="Home"></a>
+    <a href="about-me.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="youtube.html">YouTube</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="main">
+    &nbsp;
+    <p>Click on the pictures below to learn more about some of the key figures who served as Pacific Paratroopers during World War II:</p>
+    &nbsp;
+        <body>
+      <style>
+  /* Container for the image and map */
+  .hotspot-container { position: relative; display: inline-block; }
+
+  /* Hidden popup styling */
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+  }
+
+  /* Show popup when the URL hash matches the ID */
+  .popup-overlay:target { display: flex; align-items: center; justify-content: center; }
+
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 300px;
+  }
+
+  .close-btn { position: absolute; top: 10px; right: 10px; text-decoration: none; color: black; }
+</style>
+
+<div class="hotspot-container">
+  <!-- The main image -->
+  <img src="pto-men.png" usemap="#image-map" alt="Interactive Map">
+
+  <!-- Define the clickable spots -->
+  <map name="image-map">
+    <!-- coords format: "left-x, top-y, right-x, bottom-y" for a rectangle -->
+    <area shape="rect" coords="165,77,392,344" href="#spot1" alt="Spot 1">
+    <area shape="rect" coords="427,81,625,344" href="#spot2" alt="Spot 2">
+    <area shape="rect" coords="412,370,638,645" href="#spot3" alt="Spot 3">
+    <area shape="rect" coords="860,86,1058,351" href="#spot4" alt="Spot 4">
+    <area shape="rect" coords="1078,88,1298,354" href="#spot5" alt="Spot 5">
+    <area shape="rect" coords="862,370,1057,658" href="#spot6" alt="Spot 6">
+    <area shape="rect" coords="1076,375,1299,658" href="#spot7" alt="Spot 7">
+  </map>
+</div>
+
+<!-- Popup Window for Spot 1 -->
+<div id="spot1" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>George M. Jones,<br>503rd RCT<br>(1911-1995)</h2>
+    <p>A 1935 graduate of West Point, Col. Jones commanded the 503rd RCT in New Guinea and the Philippines, where he earned the nickname "The Warden." He later served in the Korean War, retiring from the Army as a Brigadier General in 1968.</p>
+    <img src="jones-corregidor.png" alt="Jones plans Corregidor">
+    <figcaption>Col. Jones (pointing at map) and his men plan the jump on Corregidor, February 1945. (Photos sources: US Army Signal Corps)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 2 -->
+<div id="spot2" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Joseph M. Swing,<br>11th Airborne<br>(1894-1984)</h2></h2>
+    <p>A 1915 graduate of West Point and veteran of World War I, Gen. Swing commanded the 11th Airborne from the time they were formed in 1943 until 1948. After retiring from the Army in 1954, Swing was appointed by his West Point classmate President Eisenhower to be head of the United States Immigration and Naturalization Service.</p>
+    <img src="swing-map.png" alt="Swing on Luzon">
+    <figcaption>Gen. Swing (helmetless, at right) and his officers study a map on Luzon, February 1945. (Sources: Truman Presidential Library & US Army Signal Corps)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 3 -->
+<div id="spot3" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Rod Serling,<br>11th Airborne<br>(1925-1975)</h2></h2>
+    <p>Volunteering to be a paratrooper straight out of high school, Rod Serling would later become a renowned radio, TV and film writer, best known as the creator and host of <i>The Twilight Zone</i>. He died of a sudden heart attack in 1975 at the age of 50.</p>
+    <img src="serlingTV.png" alt="Rod Serling on TV">
+    <figcaption>Rod Serling appearing in the episode "Nick of Time" (1960). (Sources: Serling Family & CBS)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 4 -->
+<div id="spot4" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Ray E. Eubanks,<br>503rd RCT<br>(1922-1944)</h2>
+    <p>During the Battle of Noemfoor, Sgt. Eubanks was in an intense firefight with Japanese troops. According to his citation, "In spite of his painful wounds he immediately charged the enemy and using his weapon as a club killed 4 of the enemy before he was himself again hit and killed." For these actions, he was posthumously awarded the Medal of Honor.</p>
+    <img src="eubanks.png" alt="Eubanks wearing parachutes">
+    <figcaption>(Sources: Wikipedia & Facebook)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 5 -->
+<div id="spot5" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Elmer E. Fryar,<br>11th Airborne<br>(1914-1944)</h2>
+    <p>During the Battle of Leyte, "an enemy sniper appeared and aimed his weapon at the platoon leader. Pvt. Fryar instantly sprang forward, received the full burst of automatic fire in his own body and fell mortally wounded. With his remaining strength he threw a hand grenade and killed the sniper." For these actions, he was posthumously awarded the Medal of Honor.</p>
+     <img src="fryar.png" alt="Fryar photo">
+     <figcaption>(Source: Facebook)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 6 -->
+<div id="spot6" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Lloyd G. McCarter<br>503rd RCT<br>(1917-1956)</h2>
+    <p>During the Battle of Corregidor, Pvt. McCarter was in an intense firefight with Japanese troops. His citation states, "He was seriously wounded; but, though he had already killed more than 30 of the enemy, he refused to evacuate until he had pointed out immediate objectives for attack." He survived the battle and was awarded the Medal of Honor by President Truman.</p>
+    <img src="mccarter.png" alt="McCarter MOH ceremony">
+    <figcaption>(Sources: Wikipedia and Facebook)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 7 -->
+<div id="spot7" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Manuel Pérez Jr.,<br>11th Airborne<br>(1923-1945)</h2>
+    <p>During the Battle of Luzon, Pvt. Perez became a one-man army. His citation reads, "Single-handedly, he killed 18 of the enemy in neutralizing the position that had held up the advance of his entire company." He was killed in action a month later and was posthumously awarded the Medal of Honor.</p>
+    <img src="perez.jpg" alt="Perez photo">
+    <figcaption>(Source: Wikipedia and the Congressional Medal of Honor Society)</figcaption>
+  </div>
+</div>
+</body>
+</body>
+
+</html>

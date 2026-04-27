@@ -1,0 +1,152 @@
+body {
+margin: 0;
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+font-family: Verdana, sans-serif;
+}
+
+p {
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+}
+
+/* Top Navigation Bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+height: 50px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: right; /* Horizontal alignment */
+  height: 50px; /* Container must have a height */ 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: White;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: gray;
+}
+
+/* Google Search */
+#search-container {
+  float: right;
+  margin-top: 8px;
+  margin-right: 16px;
+  width: 300px;
+}
+
+/* Side Navigation Menu */
+.sidenav {
+  height: 100%; 
+  width: 200px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 50px; 
+  left: 0;
+  background-color: rgb(96, 95, 95);
+  overflow-x: hidden; 
+  padding-top: 2px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  font-family: Verdana, sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: Black;
+}
+
+/* Main Page */
+.main {
+  margin-top: 50px; 
+  margin-left: 200px; 
+  padding: 0px 10px;
+}
+
+/* Featured Collections */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-right: 200px;
+  padding-bottom: 15px;
+  padding-left: 200x;
+}
+
+img {
+  margin: 5px;
+}
+
+/* Hover Effect for Featured Collections*/
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 300px;
+    height: 221px;
+}
+
+.overlay-box {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.801);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-overlay .overlay-box:hover {
+    opacity: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+/* YouTube Embeds */
+.iframe {
+position: absolute;
+right: 0%;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  position: relative; /* Or fixed, depending on desired behavior */
+  bottom: 0;
+  width: 100%;
+}
+
+/* Films For Sale */
+.imgContainer {
+    float: left;
+}

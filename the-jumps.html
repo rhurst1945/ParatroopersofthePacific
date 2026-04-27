@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Jumps</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="topnav">
+    <h1 style="color:white; text-align: right;">PARATROOPERS OF THE PACIFIC</h1>
+    <img src="wings.png" alt="Paratrooper Wings">
+  </nav>
+
+  <!-- Side Navigation Menu -->
+  <div class="sidenav">
+    <a href="index.html">
+      <img src="home.png" alt="Home" style="width: 50%; height: auto;" title="Home"></a>
+    <a href="about-me.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="youtube.html">YouTube</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="main">
+    &nbsp;
+    <p>Click the interactive map below to learn more about the combat jumps made by US Army paratroopers in the Pacific during World War II:</p>
+
+    <body>
+      <style>
+  /* Container for the image and map */
+  .hotspot-container { position: relative; display: inline-block; }
+
+  /* Hidden popup styling */
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+  }
+
+  /* Show popup when the URL hash matches the ID */
+  .popup-overlay:target { display: flex; align-items: center; justify-content: center; }
+
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 300px;
+  }
+
+  .close-btn { position: absolute; top: 10px; right: 10px; text-decoration: none; color: black; }
+</style>
+
+<div class="hotspot-container">
+  <!-- The main image -->
+  <img src="jump-map.png" usemap="#image-map" alt="Interactive Map">
+
+  <!-- Define the clickable spots -->
+  <map name="image-map">
+    <!-- coords format: "left-x, top-y, right-x, bottom-y" for a rectangle -->
+    <area shape="circle" coords="1163,507,15" href="#spot1" alt="Spot 1">
+    <area shape="circle" coords="587,350,15" href="#spot2" alt="Spot 2">
+    <area shape="circle" coords="236,594,15" href="#spot3" alt="Spot 3">
+    <area shape="circle" coords="182,566,15" href="#spot4" alt="Spot 4">
+    <area shape="circle" coords="268,574,15" href="#spot5" alt="Spot 5">
+    <area shape="circle" coords="313,70,15" href="#spot6" alt="Spot 6">
+  </map>
+</div>
+
+<!-- Popup Window for Spot 1 -->
+<div id="spot1" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Combat Jump #1</h2>
+    <p><b>5 September 1943:</b> The 503rd RCT makes the first combat jump of the Pacific War at Nadzab, Papua New Guinea. The operation goes smoothly and helps bolster the US Army's confidence in using Airborne forces.</p>
+    <img src="nadzab.jpg" alt="503rd at Nadzab">
+    <figcaption>Troopers of the 503rd pose with a captured Japanese flag at Nadzab. (Source: Australian War Memorial)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 2 -->
+<div id="spot2" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Combat Jump #2</h2>
+    <p><b>3 July 1944:</b> Due to faulty intelligence, the 503rd is ordered to jump onto Noemfoor Island in Dutch New Guinea (today in Indonesia). They sustain several injuries, none of which are caused by the enemy, but they capture the island in short order.</p>
+    <img src="noemfoor.jpg" alt="503rd at Noemfoor">
+    <figcaption>503rd troops pose after landing on Noemfoor. (Source: Australian War Memorial)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 3 -->
+<div id="spot3" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Combat Jump #3</h2>
+    <p><b>3 February 1945:</b> The 11th Airborne makes their first combat jump at Tagaytay Ridge. Despite most troopers jumping at the wrong time, they quickly reassemble and head north to Manila, the capital of the Philippines.</p>
+    <img src="tagaytay.jpg" alt="511th at Tagaytay">
+    <figcaption>C-47s drop 11th Airborne paratroopers onto Tagaytay Ridge. (Source: National Archives and Records Administration)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 4 -->
+<div id="spot4" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Combat Jump #4</h2>
+    <p><b>16 February 1945:</b> The 503rd RCT makes their most famous jump of the war when they jump onto Corregidor Island. After a bloody 2-week battle, the strategic and symbolic island is back in American hands.</p>
+    <img src="corregidor.jpg" alt="503rd at Corregidor">
+    <figcaption>503rd troops in action on Corregidor. (Source: National Archives and Records Administration)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 5 -->
+<div id="spot5" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Combat Jump #5</h2>
+    <p><b>23 February 1945:</b> The 11th Airborne makes its most famous combat jump near the town of Los Baños in order to liberate over 2,000 Allied civilian prisoners. Every single prisoner is rescued alive, making it the most successful rescue operation in US military history.</p>
+     <img src="losbanos.jpg" alt="511th at Los Banos">
+     <figcaption>11th Airborne troops pose with a child they rescued from Japanese captivity at Los Baños. (Source: National Archives and Records Administration)</figcaption>
+  </div>
+</div>
+
+<!-- Popup Window for Spot 6 -->
+<div id="spot6" class="popup-overlay">
+  <div class="popup-content">
+    <a href="#" class="close-btn">X</a>
+    <h2>Combat Jump #6</h2>
+    <p><b>23 June 1945:</b> In the last combat jump of World War II, the 11th Airborne lands near the town of Aparri to cut off and destroy the remaining enemy forces in the area.</p>
+    <img src="aparri.jpg" alt="511th at Aparri">
+    <figcaption>11th Airborne troops inside a C-47 on their way to Aparri. (Source: National Archives and Records Administration)</figcaption>
+  </div>
+</div>
+</body>
+
+</html>

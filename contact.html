@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="topnav">
+    <h1 style="color:white; text-align: right;">PARATROOPERS OF THE PACIFIC</h1>
+    <img src="wings.png" alt="Paratrooper Wings">
+  </nav>
+
+  <!-- Side Navigation Menu -->
+  <div class="sidenav">
+    <a href="index.html">
+      <img src="home.png" alt="Home" style="width: 50%; height: auto;" title="Home"></a>
+    <a href="about-me.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="youtube.html">YouTube</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="main">
+    &nbsp;
+    <p>Questions? Comments? Errors that need correcting? Or maybe you had a relative who fought as paratrooper in the Pacific during World War II? I would love to hear from you!</p>
+    &nbsp;
+    <!-- Contact Form -->
+    <h2>Contact Me</h2>
+    <div class="grid-container">
+      <div class="grid-child">
+        <form action="https://formsubmit.co/rhurst1945@yahoo.com" method="POST">
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br><br>
+
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+          <input type="submit" value="Send Message" class="button">
+        </form>
+      </div>
+      <div class="grid-child">
+        <img src="a-paratrooper-from-the-us-503rd-parachute-infantry-regiment-v0-2qoi8j2vnh441-bright-contrast.jpg" style="padding:1px;border:solid black;" alt="USMC Combat Cameraman, 1944"
+          title="A close call on Corregidor">
+      </div>
+    </div>
+
+    <!-- Styling for Responsive Send Button -->
+    <style>
+      .button {
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        width: 200px;
+        height: 35px;
+        line-height: 60px;
+        font: bold 20px arial;
+        border: solid 2px red;
+        box-shadow: 2px 2px 3px;
+        border-radius: 10px;
+        background: radial-gradient(white, #bbb);
+        transition: all 100ms ease-in-out;
+      }
+
+      @keyframes wiggle {
+        0% {
+          transform: rotate(0);
+        }
+
+        25% {
+          transform: rotate(3deg);
+        }
+
+        75% {
+          transform: rotate(-3deg);
+        }
+
+        100% {
+          transform: rotate(0);
+        }
+      }
+
+      .button:hover {
+        transform: scale(1.05);
+        color: red;
+        cursor: pointer;
+      }
+
+      .button:active {
+        transform: scale(0.95);
+        background: radial-gradient(#ddd, #999);
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    </style>
+</body>
+
+</html>
